@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:simpleType name="precoType">
+        <xs:restriction base="xs:decimal">
+            <xs:pattern value="\d.*\.\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+   <xs:element name="computadores">
+       <xs:complexType>
+           <xs:sequence>
+    <xs:element name="computador" maxOccurs="unbounded">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="imagem"/>
+                <xs:element name="imagem2"/>
+                <xs:element name="imagem3"/>
+                <xs:element name="marca" type="xs:string" maxOccurs="1"/>
+                <xs:element name="processador" maxOccurs="1">
+                    <xs:complexType>
+                       <xs:sequence>
+                           <xs:element name="fabricante">
+                               <xs:simpleType>
+                                   <xs:restriction base="xs:string">
+                                       <xs:pattern value="Intel|AMD"/>
+                                   </xs:restriction>
+                               </xs:simpleType>
+                           </xs:element>
+                           <xs:element name="versao" type="xs:string" maxOccurs="1" minOccurs="1"/>
+                           <xs:element name="numero_processador" type="xs:string" maxOccurs="1" minOccurs="1"/>
+                           <xs:element name="frequencia" maxOccurs="1" minOccurs="1">
+                               <xs:complexType>
+                               <xs:simpleContent>
+                                   <xs:extension base="xs:decimal">
+                                       <xs:attribute name="unidade" type="xs:string"/>
+                                   </xs:extension>
+                               </xs:simpleContent> 
+                               </xs:complexType>
+                           </xs:element>
+                       </xs:sequence> 
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="memoria" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="tipo" type="xs:string" default="RAM"/>
+                            <xs:element name="quantidade">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                    <xs:extension base="xs:integer">
+                                        <xs:attribute name="unidade" type="xs:string"/>
+                                    </xs:extension>
+                                    </xs:simpleContent>    
+                                </xs:complexType>     
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="disco" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="primario" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:integer">
+                                            <xs:attribute name="tipo" type="xs:string" use="required"/>
+                                            <xs:attribute name="unidade" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="secundario" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:integer">
+                                            <xs:attribute name="tipo" type="xs:string" use="required"/>
+                                            <xs:attribute name="unidade" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="placa_grafica" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="fabricante" type="xs:string"/>
+                            <xs:element name="gama" type="xs:string"/>
+                            <xs:element name="numero_placa" type="xs:string"/>
+                            <xs:element name="memoria_grafica">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tipo">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:minLength value="4"/>
+                                                  <xs:maxLength value="5"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="quantidade">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:integer">
+                                                        <xs:attribute name="unidade" type="xs:string"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>  
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tamanho_ecra" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:decimal">
+                                <xs:attribute name="unidade" type="xs:string" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="resolucao_ecra" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="horizontal">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:positiveInteger">
+                                            <xs:attribute name="unidade" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="vertical">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:positiveInteger">
+                                            <xs:attribute name="unidade" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="sistema_operativo" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sistema" type="xs:string"/>
+                            <xs:element name="versao" type="xs:positiveInteger" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="drive" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="conetividade_sem_fios">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="wifi" type="xs:boolean"/>
+                            <xs:element name="bluetooth" type="xs:boolean"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ligacoes">
+                    <xs:complexType>
+                        <xs:sequence>       
+                            <xs:element name="audio">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ligacao" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="tipo" type="xs:string"/>
+                                                    <xs:element name="quantidade">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:positiveInteger">
+                                                                <xs:pattern value="[0-9]"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="tipo" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="video">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ligacao" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="tipo" type="xs:string"/>
+                                                    <xs:element name="quantidade">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:positiveInteger">
+                                                                <xs:pattern value="[0-9]"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="tipo" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="outras">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ligacao" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="tipo" type="xs:string"/>
+                                                    <xs:element name="quantidade">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:positiveInteger">
+                                                                <xs:pattern value="[0-9]"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="tipo" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="sistema_de_som">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="coluna_imbutida" type="xs:boolean"/>
+                            <xs:element name="microfone_imbutido" type="xs:boolean"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="webcam_incorporada" type="xs:boolean"/>
+                <xs:element name="altura" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:decimal">
+                                <xs:attribute name="unidade" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="comprimento" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:decimal">
+                                <xs:attribute name="unidade" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="espessura" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:decimal">
+                                <xs:attribute name="unidade" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="peso" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:decimal">
+                                <xs:attribute name="unidade" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="preco">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="precoType">
+                                <xs:attribute name="moeda" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="descricao1" type="xs:string"/>
+                <xs:element name="descricao2" type="xs:string"/>
+                <xs:element name="descricao3" type="xs:string"/>
+                <xs:element name="relacionados">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="relacionado1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="imagem"/>
+                                        <xs:element name="nome" type="xs:string"/>
+                                        <xs:element name="preco">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="precoType">
+                                                        <xs:attribute name="moeda" use="required"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="relacionado2">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="imagem"/>
+                                        <xs:element name="nome" type="xs:string"/>
+                                        <xs:element name="preco">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="precoType">
+                                                        <xs:attribute name="moeda" use="required"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        <xs:attribute name="identificador" type="xs:string"/>
+        </xs:complexType>        
+    </xs:element>
+           </xs:sequence>
+       </xs:complexType>
+   </xs:element>
+</xs:schema>

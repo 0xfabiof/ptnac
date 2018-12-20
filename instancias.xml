@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<computadores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="schema.xsd">
+    <?xml-stylesheet type="text/xsl" href="script.xsl"?>
+    <computador identificador="ASUS ROG G752VS">
+        <imagem file="imagens/asus.png"/>
+        <imagem2 file="imagens/asus2.png"/>
+        <imagem3 file="imagens/asus3.png"/>
+        <marca>Asus</marca>
+        <processador>
+            <fabricante>Intel</fabricante>
+            <versao>Core</versao>
+            <numero_processador>i7-6820HK</numero_processador>
+            <frequencia unidade="GHz">2.7</frequencia> 
+        </processador>
+        <memoria> 
+            <tipo>RAM</tipo>
+            <quantidade unidade="GB">32</quantidade>
+        </memoria>
+        <disco>
+            <primario tipo="HDD" unidade="GB">1000</primario>
+            <secundario tipo="SSD" unidade="GB">512</secundario>
+        </disco>
+        <placa_grafica>
+            <fabricante>NVIDIA</fabricante>
+            <gama>GeForce</gama>
+            <numero_placa>GTX1070</numero_placa>
+            <memoria_grafica>
+                <tipo>GDDR5</tipo>
+                <quantidade unidade="GB">8</quantidade>
+            </memoria_grafica>
+        </placa_grafica>
+        <tamanho_ecra unidade="''">17.3</tamanho_ecra>
+        <resolucao_ecra>
+            <horizontal unidade="pixeis">1920</horizontal>
+            <vertical unidade="pixeis">1080</vertical>
+        </resolucao_ecra>
+        <sistema_operativo> 
+            <sistema>Windows</sistema>
+            <versao>10</versao>
+        </sistema_operativo>
+        <drive>Blu-Ray</drive>
+        <conetividade_sem_fios>
+            <wifi>1</wifi>
+            <bluetooth>1</bluetooth>
+        </conetividade_sem_fios>
+        <ligacoes>
+            <audio>
+                <ligacao tipo="entrada">
+                    <tipo>Microphone-in jack</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+                <ligacao tipo="saída">
+                    <tipo>Headphone-out jack</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+            </audio>
+            <video>
+                <ligacao tipo="saída">
+                    <tipo>HDMI Port</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+                <ligacao tipo="saída">
+                    <tipo>mini Display Port</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+            </video>
+            <outras>
+                <ligacao tipo="entrada/saída">
+                    <tipo>USB 3.0</tipo>
+                    <quantidade>4</quantidade>
+                </ligacao>
+                <ligacao tipo="entrada/saida">
+                    <tipo>USB 3.1</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+            </outras>
+        </ligacoes>
+        <sistema_de_som>
+           <coluna_imbutida>1</coluna_imbutida>
+           <microfone_imbutido>1</microfone_imbutido>
+        </sistema_de_som>
+        <webcam_incorporada>1</webcam_incorporada>
+        <altura unidade="Cm">42.8</altura>
+        <comprimento unidade="Cm">33.4</comprimento>
+        <espessura unidade="Cm">5.3</espessura>
+        <peso unidade="Kg">4.4</peso>
+        <preco moeda="€">2699.00</preco>
+        <descricao1>Design revolucionário</descricao1>
+        <descricao2>Elegante, fino e leve</descricao2>
+        <descricao3>O mais potente portátil da gama Asus</descricao3>
+        <relacionados>
+            <relacionado1>
+                <imagem file="imagens/hp1.png"/>
+                <nome>HP OMEN 15-AX004NP</nome>
+                <preco moeda="€">999.99</preco>
+            </relacionado1>
+            <relacionado2>
+                <imagem file="imagens/lenovo1.png"/>
+                <nome>LENOVO Ideapad Y700-15ISK</nome>
+                <preco moeda="€">1249.99</preco>
+            </relacionado2>
+        </relacionados>
+    </computador> 
+    
+    <computador identificador="HP Pavilion 15-BC000NP"> 
+        <imagem file="imagens/hp15_1.png"/>
+        <imagem2 file="imagens/hp15_2.png"/>
+        <imagem3 file="imagens/hp15_3.png"/>
+        <marca>HP</marca>
+        <processador>
+            <fabricante>Intel</fabricante>
+            <versao>Core</versao>
+            <numero_processador>i7-6700HQ</numero_processador>
+            <frequencia unidade="GHz">2.6</frequencia> 
+        </processador>
+        <memoria> 
+            <tipo>RAM</tipo>
+            <quantidade unidade="GB">8</quantidade>
+        </memoria>
+        <disco>
+            <primario tipo="HDD" unidade="GB">1000</primario>
+        </disco>
+        <placa_grafica>
+            <fabricante>NVIDIA</fabricante>
+            <gama>GeForce</gama>
+            <numero_placa>GTX950M</numero_placa>
+            <memoria_grafica>
+                <tipo>GDDR5</tipo>
+                <quantidade unidade="GB">2</quantidade>
+            </memoria_grafica>
+        </placa_grafica>
+        <tamanho_ecra unidade="''">15.6</tamanho_ecra>
+        <resolucao_ecra>
+            <horizontal unidade="pixeis">1920</horizontal>
+            <vertical unidade="pixeis">1080</vertical>
+        </resolucao_ecra>
+        <sistema_operativo> 
+            <sistema>Windows</sistema>
+            <versao>10</versao>
+        </sistema_operativo>
+        <drive>DVD</drive>
+        <conetividade_sem_fios>
+            <wifi>1</wifi>
+            <bluetooth>1</bluetooth>
+        </conetividade_sem_fios>
+        <ligacoes>
+            <audio>
+                <ligacao tipo="entrada">
+                    <tipo>Microphone-in jack</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+                <ligacao tipo="saída">
+                    <tipo>Headphone-out jack</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+            </audio>
+            <video>
+                <ligacao tipo="saída">
+                    <tipo>HDMI Port</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+            </video>
+            <outras>
+                <ligacao tipo="entrada/saída">
+                    <tipo>USB 2.0</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+                <ligacao tipo="entrada/saida">
+                    <tipo>USB 3.0</tipo>
+                    <quantidade>2</quantidade>
+                </ligacao>
+                <ligacao tipo="entrada/saida">
+                    <tipo>Leitor SD</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+                <ligacao tipo="entrada/saida">
+                    <tipo>RJ-45</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+            </outras>
+        </ligacoes>
+        <sistema_de_som>
+            <coluna_imbutida>1</coluna_imbutida>
+            <microfone_imbutido>1</microfone_imbutido>
+        </sistema_de_som>
+        <webcam_incorporada>1</webcam_incorporada>
+        <altura unidade="Cm">38.2</altura>
+        <comprimento unidade="Cm">25.3</comprimento>
+        <espessura unidade="Cm">2.45</espessura>
+        <peso unidade="Kg">2.2</peso>
+        <preco moeda="€">999.99</preco>
+        <descricao1>Alta Performance</descricao1>
+        <descricao2>Melhor relação qualidade/preço</descricao2>
+        <descricao3>Um best-seller da gama HP</descricao3>
+        <relacionados>
+            <relacionado1>
+                <imagem file="imagens/asus.png"/>
+                <nome>ASUS ROG G752VS</nome>
+                <preco moeda="€">2699.00</preco>
+            </relacionado1>
+            <relacionado2>
+                <imagem file="imagens/acer.png"/>
+                <nome>ACER Aspire V13</nome>
+                <preco moeda="€">699.99</preco>
+            </relacionado2>
+        </relacionados>
+    </computador>
+    
+    <computador identificador="LENOVO Ideapad Y700-15ISK"> 
+        <imagem file="imagens/lenovoY.png"/>
+        <imagem2 file="imagens/lenovoY2.png"/>
+        <imagem3 file="imagens/lenovoY3.png"/>
+        <marca>LeNovo</marca>
+        <processador>
+            <fabricante>Intel</fabricante>
+            <versao>Core</versao>
+            <numero_processador>i7-6700HQ</numero_processador>
+            <frequencia unidade="GHz">2.6</frequencia> 
+        </processador>
+        <memoria> 
+            <tipo>RAM</tipo>
+            <quantidade unidade="GB">16</quantidade>
+        </memoria>
+        <disco>
+            <primario tipo="HDD" unidade="GB">1000</primario>
+            <secundario tipo="SSD" unidade="GB">256</secundario>
+        </disco>
+        <placa_grafica>
+            <fabricante>NVIDIA</fabricante>
+            <gama>GeForce</gama>
+            <numero_placa>GTX 960M</numero_placa>
+            <memoria_grafica>
+                <tipo>DDR5</tipo>
+                <quantidade unidade="GB">4</quantidade>
+            </memoria_grafica>
+        </placa_grafica>
+        <tamanho_ecra unidade="''">15.6</tamanho_ecra>
+        <resolucao_ecra>
+            <horizontal unidade="pixeis">1920</horizontal>
+            <vertical unidade="pixeis">1080</vertical>
+        </resolucao_ecra>
+        <sistema_operativo> 
+            <sistema>Windows</sistema>
+            <versao>10</versao>
+        </sistema_operativo>
+        <drive>DVD</drive>
+        <conetividade_sem_fios>
+            <wifi>1</wifi>
+            <bluetooth>1</bluetooth>
+        </conetividade_sem_fios>
+        <ligacoes>
+            <audio>
+                <ligacao tipo="entrada">
+                    <tipo>Combo line-out/Mic jack</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+                <ligacao tipo="saída">
+                    <tipo>Headphone-out jack</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+            </audio>
+            <video>
+                <ligacao tipo="saída">
+                    <tipo>HDMI</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+            </video>
+            <outras>
+                <ligacao tipo="entrada/saída">
+                    <tipo>USB 3.0</tipo>
+                    <quantidade>2</quantidade>
+                </ligacao>
+                <ligacao tipo="entrada/saída">
+                    <tipo>USB 2.0</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+                <ligacao tipo="entrada/saída">
+                    <tipo>SD Card</tipo>
+                    <quantidade>1</quantidade>
+                </ligacao>
+            </outras>
+        </ligacoes>
+        <sistema_de_som>
+            <coluna_imbutida>1</coluna_imbutida>
+            <microfone_imbutido>1</microfone_imbutido>
+        </sistema_de_som>
+        <webcam_incorporada>1</webcam_incorporada>
+        <altura unidade="Cm">38.7</altura>
+        <comprimento unidade="Cm">27.75</comprimento>
+        <espessura unidade="Cm">2.6</espessura>
+        <peso unidade="Kg">2.6</peso>
+        <preco moeda="€">999.00</preco>
+        <descricao1>Design moderno e compacto</descricao1>
+        <descricao2>Gama média/alta a preço acessível</descricao2>
+        <descricao3>Garantia de confiança Lenovo</descricao3>
+        <relacionados>
+            <relacionado1>
+                <imagem file="imagens/hp15_3.png"/>
+                <nome>HP Pavilion 15-BC000NP</nome>
+                <preco moeda="€">999.99</preco>
+            </relacionado1>
+            <relacionado2>
+                <imagem file="imagens/asuss.png"/>
+                <nome>ASUS A540LJ-35A92PB1</nome>
+                <preco moeda="€">499.99</preco>
+            </relacionado2>
+        </relacionados>
+    </computador>
+</computadores>

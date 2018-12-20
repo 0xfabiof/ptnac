@@ -1,0 +1,459 @@
+body {
+	background-color: black;
+	color: white;
+}
+li {
+	text-decoration: none;
+}
+div.base {
+	margin: auto;
+}
+strong {
+	text-decoration: underline;
+}
+section strong {
+	position: relative;
+	left: 55px;
+}
+section h4 {
+	position: relative;
+	left: 20px;
+}
+.computador4  h4{
+	position: relative;
+	left: 40px;
+}
+.computador5 h4{
+	left: 50px;
+}
+.computador6 h4{
+	left: 40px;
+}
+h1 {
+	font-family: courier;
+}
+h2 {
+	position: absolute;
+	top: 2.5em;
+	left: 20.4em;
+	font-family: Arial;
+}
+.asuspics {
+	position: absolute;
+	left: 15em;
+	top: 8.8em
+}
+#listaspecs {
+	list-style-type: circle;
+	position: absolute;
+	left: 33em;
+	top: 10em;
+}
+#listaspecs2 {
+	list-style-type: none;
+	position: absolute;
+	left: 43.3em;
+	top: 10em;
+}
+#listadesc {
+	list-style-type: square;
+	position: absolute;
+	left: 13em;
+	top: 24.7em;
+}
+#spectitle {
+	position: absolute;
+	left: 33em;
+	top: 8em;
+}
+#preco {
+	position: absolute;
+	left: 34em;
+	top: 26.7em;
+}
+#botaocarrinho {
+	display: block;
+	background-color: black;
+	color: white;
+	width: 270px;
+	text-decoration: none;
+	border: solid white 1.5px;
+	text-align: center;
+	font-size: 20px;
+	position: absolute;
+	top: 22em;
+	left: 36.8em;
+}
+#botaocarrinho:hover {
+	display: block;
+	background-color: white;
+	color: black;	
+}
+#produtos {
+	background-color: black;
+	border: white solid 1.5px;
+	width: 200px;
+	height: 495px;
+	position: absolute;
+	top: 86px;
+	right: 0px;
+}
+div a {
+	text-decoration: none;
+	color: white;
+}
+div a:visited {
+	text-decoration: none;
+	color: white;
+}
+div p {
+	text-align: center;
+	font-family: arial;
+	font-size: 11px;
+}
+div h3 {
+	position: relative;
+	margin: 2px;
+	text-align: center;
+	text-decoration: underline;
+}
+div#produtos img {
+	position: relative;
+	left: 20px;
+	margin-top: 30px;
+	margin-bottom: -8px;
+}
+nav.menu2 li {
+	display: inline;
+}
+nav.menu2 li a {
+	position: relative;
+	top: 33em;
+	left: 25em;
+	text-decoration: none;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: white;
+	background-color: black;
+	margin: 0.05px;
+	border: solid white 1.5px;
+}
+nav.menu2 li a:hover {
+	background-color: white;
+	color: black;
+}
+#partebaixo {
+	position: relative;
+	bottom: 75px;
+}
+#listaspecscont {
+	list-style-type: circle;
+	position: absolute;
+	left: 33em;
+	top: 19em;
+}
+#listaspecscont2 {
+	list-style-type: none;
+	position: absolute;
+	left: 43.5em;
+	top: 19em;
+}
+#seeMore {
+	display: block;
+	background-color: black;
+	color: white;
+	width: 120px;
+	text-decoration: none;
+	border: solid white 1.5px;
+	text-align: center;
+	font-size: 15px;
+	position: absolute;
+	top: 23.5em;
+	left: 42.3em;
+}
+#seeMore:hover {
+display: block;
+	background-color: white;
+	color: black;
+}
+nav.menuvertical ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 8.5em;
+	left: 1em;
+	
+}
+nav.menuvertical li a {
+	display: block;
+	background-color: black;
+	color: white;
+	width: 150px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-bottom: 8px;
+	text-decoration: none;
+	border: solid white 1.5px;
+ }
+ nav.menuvertical li a:hover {
+	background-color: white;
+	color: black;
+}
+.computador1 {
+	position: absolute;
+	left: 50px;
+}
+.computador2 {
+	position: absolute;
+	left: 400px;
+}
+.computador3 {
+	position: absolute;
+	left: 760px;
+}
+.computador4 {
+	position: absolute;
+	left: 50px;
+	top: 350px;
+}
+.computador5 {
+	position: absolute;
+	left: 400px;
+	top: 350px;
+}
+.computador6 {
+	position: absolute;
+	left: 760px;
+	top: 350px;
+}
+#blocogrande {
+	position: absolute;
+	top: 15em;
+}
+nav.menu3 li {
+	display: inline;
+}
+nav.menu3 li a {
+	position: relative;
+	top: 52em;
+	left: 19em;
+	text-decoration: none;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: white;
+	background-color: black;
+	margin: 0.05px;
+	border: solid white 1.5px;
+}
+nav.menu3 li a:hover {
+	background-color: white;
+	color: black;
+}
+nav.menu4 li {
+	display: inline;
+}
+nav.menu4 li a {
+	position: relative;
+	top: 2em;
+	left: 15em;
+	text-decoration: none;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: white;
+	background-color: black;
+	margin: 0.05px;
+	border: solid white 1.5px;
+}
+nav.menu4 li a:hover {
+	background-color: white;
+	color: black;
+}
+#carrinho {
+	position: absolute;
+	left: 825px;
+	top: 88px;
+	}
+#home {
+	position: absolute;
+	left: 160px;
+	top: 95px;
+}
+.Menu5 ul{
+display: inline-block;
+margin-left: 0em;
+margin-top: 5em;
+border-width: 0.5px;
+border-style: solid;
+padding: 2em;
+background-color: black;
+list-style-type: none;
+font-size:21px;
+position: absolute;
+top: 160px;
+right: 55px;
+border: 1px white solid;
+}
+
+.Menu5 li a{
+color: white;
+text-decoration:none;
+}
+
+.Menu5 li a:hover{
+text-decoration:underline;
+color: white;
+}
+nav.menu1 li {
+	display: inline;
+}
+nav.menu1 li a {
+	position: relative;
+	top: 4em;
+	left: 10em;
+	text-decoration: none;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: white;
+	background-color: black;
+	margin: 0.05px;
+	border: solid white 1.5px;
+}
+nav.menu1 li a:hover {
+	background-color: white;
+	color: black;
+}
+nav.menu2inicial li {
+	display: inline;
+}
+nav.menu2inicial li a {
+	position: relative;
+	top: 38em;
+	left: 12em;
+	text-decoration: none;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: white;
+	background-color: black;
+	margin: 0.05px;
+	border: solid white 1.5px;
+}
+nav.menu2inicial li a:hover {
+	background-color: white;
+	color: black;
+}
+#carrinho2{
+	position: absolute;
+	left: 320px;
+	top: 60px
+}
+.bloco2 {
+	position: absolute;
+	top: 4em;
+	left: 1.5em;
+}
+.bloco4 {
+	position: absolute;
+	top: 14em;
+	left: 2em;
+}
+.bloco6 {
+	position: absolute;
+	top: 14em;
+	left: 26em;
+}
+#major1 {
+	border: white solid 2px;
+	border-radius: 18px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#major2 {
+	border: white solid 2px;
+	border-radius: 18px;
+	height: 290px;
+	padding: 15px;
+	width: 500px;
+}
+#asusrog{
+	color: white;
+	position: absolute;
+	top: 19em;
+	left: 285px;
+	font-family: "Times New Roman";
+	font-weight: bold;
+	font-size: 14px;
+}
+#artigo{
+	color: white;
+	position: absolute;
+	top: 20.5em;
+	left: 770px;
+	font-weight: bold;
+	font-family: arial;
+	text-decoration: underline;
+	font-size: 20px;
+}
+.slideshowbanners {
+	position: absolute;
+	top: 36em;
+	left: 11em;
+	border: solid white 2px;
+}
+.slideshowbanners2 {
+	position: absolute;
+	top: 57em;
+	left: 18em;
+	border: solid white 2px;
+}
+#produtosemdesc {
+	position: absolute;
+	top: 12.2em;
+	left: 4em;
+	color: white;
+	position: absolute;
+	font-weight: bold;
+	font-family: arial;
+	text-decoration: underline;
+	font-size: 19px;
+}
+#lider {
+	font-size: 17px;
+}
+#pesquisa {
+	position: absolute;
+	top: 6.2em;
+	left: 57.2em;
+}
+#pesquisa2 {
+	position: absolute;
+	top: 6em;
+	left: 58.4em;
+}
+#pesquisa3 {
+	position: absolute;
+	top: 6.2em;
+	left: 65em;
+}
+.menu3 {
+	position: absolute;
+	top: 13em;
+}
+.promocao {
+	position: relative;
+	top: 1.5em;
+}
