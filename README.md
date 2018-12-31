@@ -1,16 +1,19 @@
 ## ptnac
-XSL Script que converte ficheiros XML que descrevem laptops em páginas web (html+stylesheet+javascript) do estilo de loja online.
+XSL Script that converts XML files describing hardware specifications of laptops to fully graphical formatted webpages (html+stylesheet+javascript) in an ecommerce style.
 
-Realizado no âmbito da Unidade Curricular de Informação para a Internet da Licenciatura em Ciência de Informação
+Project done for the course of Information for the Internet, of the Bachelor's Degree in Information Science
 
-Docente: Prof. Carla Teixeira Lopes
+Lecturer: Prof. Carla Teixeira Lopes
 
-Faculdade de Engenharia da Universidade do Porto
+Department of Informatics Engineering
 
-## Utilização
-Processar documento instancias.xml com script.xsl no editor XML (Eclipse Web, Oxygen ou outros)
+Faculty of Engineering, University of Porto
 
-## Resultado
-Produção automática de página web completa com o seguinte aspeto:
+## Usage
+Use your XML editor (Eclipse Web, Oxygen, etc.) to transform the instance file (instancias.xml) with the script file (script.xsl)
+
+## Results
+
+Automatic generation of a fully graphical formatted webpage that looks like this:
 ![Output 1](https://i.imgur.com/EsOmnFv.png)
 ![Output 2](https://i.imgur.com/WJmDwgq.png)
